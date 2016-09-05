@@ -1,0 +1,17 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+	color: red;
+}
+
+#map {
+ 	height: 600px;
+ 	width: 750px;
+}
+
+.comment {
+	color: grey;
+}

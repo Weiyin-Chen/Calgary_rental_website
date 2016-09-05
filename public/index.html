@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <!-- sytle -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- JavaScript code -->
+  <script src="../node_modules/angular/angular.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsx7lks00x2cFeLU7qa3gyCMhsvlzdFKY"></script>
+
+</head>
+<body ng-app="myApp" ng-controller='test'>
+
+  <div class="container">
+
+    <div class="header">
+      <h2 class="text-center">Calgary Rental Website</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-8">
+        <div id="map"></div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Publish your rental information!
+          </div>
+          <div class="panel-body">
+            <form>
+              Address:<br>
+              <input type="text" ng-model='address' size="40">
+              <br>
+              Title:<br>
+              <input type="text" ng-model='title' size="40">
+              <br>
+              Price:<br>
+              <input type="text" ng-model='price' size="40">
+              <br>
+              Description:<br>
+              <input type="text" ng-model='description' size="40">
+              <br>
+              Contact:<br>
+              <input type="text" ng-model='contact' size="40">
+              <br>
+              <br>
+              <button type="submit" ng-click="create()">submit</button>
+              <br>
+              <p class="comment">Please refresh the page after your submit!</p>
+            </form>
+          </div>   
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
